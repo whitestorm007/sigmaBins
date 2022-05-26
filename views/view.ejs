@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../public/assets/SS..svg">
+    <title>Home | Sigma Bins</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-menue">
+            <h1 class="logo">Sigma<strong class="blue">Bins.</strong></h1>
+        </div>
+        <div class="right-menue">
+            <a class="hlink" href="/api">API</a>
+            <a class="hlink" href="/docs">Document</a>
+        </div>
+        <div class="mobile-dropdown">
+            <!-- <img class="mdi" id="navIcone" onclick="nav()" src="./assets/menu.svg" alt=""> -->
+            <button class="menu" id="navIcone" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));nav()" aria-label="Main Menu">
+                <svg width="35" height="35" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobileNavContent" class="content-dropDownNav">
+        <a class="hlink" href="/api">API</a>
+        <a class="hlink blueBG" href="/docs">Document</a>
+    </div>
+    <!-- //body content -->
+
+    <div class="body-container">
+        <div class="title-con">
+            <p class="title-big">
+                <%=data.title%>
+            </p>
+        </div>
+        <div class="input-text-areaa">
+            <textarea autoresize name="data" readonly value="jeet" class="textarea" id="ta"><%=data.data%>
+                    </textarea>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+        setTimeout(() => {
+            resize()
+        }, 500)
+    </script>
+    <script src="/script/index.js">
+    </script>
+    <script src="/script/dbs.js"></script>
+</body>
+
+</html>
