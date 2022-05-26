@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var DB_url = "mongodb+srv://whitestoorm:jeet8866@movie1.ipfnn.mongodb.net/?retryWrites=true&w=majority";
+var DB_url = "<your mongodb url>";
 
 let _id_counter = 0
 
